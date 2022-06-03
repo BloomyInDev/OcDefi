@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf_8">
+	<title>Soluce - OcDefi</title>
+</head>
+<body>
+    <h1>Donnez les indices pour connaitre le code !</h1>
+    <button>Cliquez ici</button>
+    <script>
+        let button = document.querySelector('button');
+    
+        button.onclick = function() {
+            let d1 = prompt("Quel est l'indice au défi 1?");
+            let d2 = prompt("Quel est l'indice au défi 2?");
+            let d3 = prompt("Quel est l'indice au défi 3?");
+            let d4 = prompt("Quel est l'indice au défi 4?");
+            let d5 = prompt("Quel est l'indice au défi 5?");
+            let d6 = prompt("Quel est l'indice au défi 6?");
+            let d7 = prompt("Quel est l'indice au défi 7?");
+            if (d1 == "BONBONS") {
+                if (d2 == "BRONZE") {
+                    if (d3 == "LIRE") {
+                        if (d4 == "CERCEUIL") {
+                            if (d5 == "MISTRAL") {
+                                if (d6 == "VIE") {
+                                    if (d7 == "ASSOCIATION") {
+                                        alert('Vous avez réussi!\nLe code est 0205 !')
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            else {
+                alert('Vous vous êtes trompé !\nRecommencez !')
+            }
+        }
+    
+    </script>
+
+</body>

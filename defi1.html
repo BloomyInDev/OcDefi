@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf_8">
+	<title>Defi 1 - OcDefi</title>
+</head>
+<body>
+<h1>Quel est la date de la photo qui présente Frédéric Mistral sur Wikipedia ?</h1>
+<a href="https://fr.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Mistral">Ici si vous avez la flemme</a>
+<br>
+<button>Répondre ici</button>
+<script>
+    let button = document.querySelector('button');
+
+    button.onclick = function() {
+        let soluce = prompt('Quel est la réponse ?');
+        if (soluce == "1815") {
+            alert("Vous avez réussi !\nL'indice 1 est: BONBONS\nRedirection vers la page d'accueil");
+            window.location.href = "index.html";
+        }
+        else {
+            alert('Vous vous êtes trompé !\nRecommencez !')
+        }
+    }
+
+</script>
+</body>

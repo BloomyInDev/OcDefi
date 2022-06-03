@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf_8">
+	<title>Defi 7 - OcDefi</title>
+</head>
+<body>
+<h1>Où est Frédéric Mistral ?</h1>
+<a href="quiestce.jpg"><img src="quiestce.jpg" width="90%"></a>
+<h3>Oui c'est un "Où est Charlie?"</h3>
+
+<button>Répondre ici</button>
+<script>
+    let button = document.querySelector('button');
+
+    button.onclick = function() {
+        let soluce = prompt('Quel est la réponse ?');
+        if (soluce == "4") {
+            alert("Vous avez réussi !\nL'indice 7 est: ASSOCIATION\nRedirection vers la page d'accueil");
+            window.location.href = "index.html";
+        }
+        else {
+            alert('Vous vous êtes trompé !\nRecommencez !')
+        }
+    }
+
+</script>
+</body>

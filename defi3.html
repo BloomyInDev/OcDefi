@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf_8">
+	<title>Defi 3 - OcDefi</title>
+</head>
+<body>
+<h1>Cpmbien de personnes ont fondé le félibrige ?</h1>
+<button>Répondre ici</button>
+<script>
+    let button = document.querySelector('button');
+
+    button.onclick = function() {
+        let soluce = prompt('Quel est la réponse ?');
+        if (soluce == "7") {
+            alert("Vous avez réussi !\nL'indice 3 est: LIRE\nRedirection vers la page d'accueil");
+            window.location.href = "index.html";
+        }
+        else {
+            alert('Vous vous êtes trompé !\nRecommencez !')
+        }
+    }
+
+</script>
+</body>

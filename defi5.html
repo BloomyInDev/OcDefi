@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf_8">
+	<title>Defi 5 - OcDefi</title>
+</head>
+<body>
+<h1>Dans le livre <i>III</i> de <i>III</i>, combien de fois le mot <strong>Mistral</strong> apparaait entre les pages 40 à 45 ?</h1>
+<button>Répondre ici</button>
+<script>
+    let button = document.querySelector('button');
+
+    button.onclick = function() {
+        let soluce = prompt('Quel est la réponse ?');
+        if (soluce == "16") {
+            alert("Vous avez réussi !\nL'indice 5 est: MISTRAL\nRedirection vers la page d'accueil");
+            window.location.href = "index.html";
+        }
+        else {
+            alert('Vous vous êtes trompé !\nRecommencez !')
+        }
+    }
+
+</script>
+</body>

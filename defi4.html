@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf_8">
+	<title>Defi 4 - OcDefi</title>
+</head>
+<body>
+<h1>Où est mort Frédéric Mistral ?</h1>
+<button>Répondre ici</button>
+<script>
+    let button = document.querySelector('button');
+
+    button.onclick = function() {
+        let soluce = prompt('Quel est la réponse ?');
+        if (soluce == "1815") {
+            alert("Vous avez réussi !\nL'indice 4 est: CERCEUIL\nRedirection vers la page d'accueil");
+            window.location.href = "index.html";
+        }
+        else {
+            alert('Vous vous êtes trompé !\nRecommencez !')
+        }
+    }
+
+</script>
+</body>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf_8">
+	<title>Defi 6 - OcDefi</title>
+</head>
+<body>
+<h1>Dans quel chapitre de son livre <i>Memòri e raconte</i> il raconte une pratique du <i>lou plantié</i> ?</h1>
+<h3>Ecrivez le en chiffre romain</h3>
+<button>Répondre ici</button>
+<script>
+    let button = document.querySelector('button');
+
+    button.onclick = function() {
+        let soluce = prompt('Quel est la réponse ?');
+        if (soluce == "IV") {
+            alert("Vous avez réussi !\nL'indice 6 est: VIE\nRedirection vers la page d'accueil");
+            window.location.href = "index.html";
+        }
+        else {
+            alert('Vous vous êtes trompé !\nRecommencez !')
+        }
+    }
+
+</script>
+</body>
